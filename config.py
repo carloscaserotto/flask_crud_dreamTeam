@@ -14,8 +14,9 @@ class DevelopmentConfig(Config):
     SQLALCHEMY_ECHO = True
     
     ENV="development"
-    #SECRET_KEY="some_secret_key" - la secret_key esta en instance/config.py
-
+    SECRET_KEY = '9a36ceab2f1b06b936fd4ca4cd3f221e5a6158670486e5ffe124299054690a60'
+    SQLALCHEMY_DATABASE_URI = 'mysql://dt_admin:dt2023@localhost/dreamteam_db'
+    
 class ProductionConfig(Config):
     """
     Production configurations
